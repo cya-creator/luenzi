@@ -322,7 +322,7 @@ ret
 
 ;//
 没有文件 db 'None ';没有找到loader，0是判断数
-要搜索的文件名 db 'LOADER  BIN',0;在 fat文件系统 里所有保存的文件名都是大写，0用于显示
+要搜索的文件名 db 'FATLOAD BIN',0;在 fat文件系统 里所有保存的文件名都是大写，0用于显示
 
 Q簇项 db '[]'
 簇项 db'Tuft',0
