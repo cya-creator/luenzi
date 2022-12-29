@@ -48,6 +48,10 @@ FAT区前隐藏扇区数 dd 0;分区目前已使用 隐藏扇区数，4个字节
 
 ;//
 初始化寄存器:;添加更多寄存器组合方式的注释
+nop
+nop
+nop
+nop
 mov ax,cs;代码段，cs：ip
 mov ds,ax;数据段，ds：bx，si，di
 mov ss,ax;堆栈段，ss：sp，bp
