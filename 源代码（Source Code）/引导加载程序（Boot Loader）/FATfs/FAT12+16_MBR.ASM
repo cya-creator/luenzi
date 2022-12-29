@@ -53,7 +53,7 @@ mov ds,ax;数据段，ds：bx，si，di
 mov ss,ax;堆栈段，ss：sp，bp
 mov sp,7c00h; 堆栈基地址，一般情况，此时的堆栈只是临时的，到了加载模块时还要重新设置
 ;mov bp,sp;栈游标，ss：bp
-mov ax,7e00h
+mov ax,7e0h
 mov es,ax;附加段，es：di
 cld;清空df并向前推进
 
@@ -232,7 +232,7 @@ mov bx,word ds:[未使用12字节];根目录起始扇区号，既然你们不用
 mov dl,byte ds:[驱动器号];传递参数
 mov dh,byte ds:[文件系统+3]
 
-jmp 7e00h:0;我的同行抖机灵只读一个簇就跳转过去了，让他解析表项自己读完自己，这样好吗？这样不好
+jmp 7e0h:0;我的同行抖机灵只读一个簇就跳转过去了，让他解析表项自己读完自己，这样好吗？这样不好
 
 
 
